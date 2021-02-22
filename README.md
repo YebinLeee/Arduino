@@ -1,5 +1,6 @@
 # Arduino
 Studying how to control led, buzzer, illuminator sensor, lcd, button, or other simple applicable IoT devices using Serial Communication, programmed by C++ in an Arduino sketch IDE.
+- Board: MEGA 2560 with 115200 baud rate
 
 <br>
 Reference: [Arduino.cc](https://www.arduino.cc)
