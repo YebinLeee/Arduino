@@ -76,7 +76,7 @@ _**noTone(pin)**_
 
 > stops the generation of a square wave triggered by tone(). Has no effect if no tone is being generated.
 
-<br>
+<br><br>
 
 ## **Serial**
 > Used` for communication between the Arduino board and a computer or other devices. Use the Arduino environment’s built-in serial monitor to communicate with an Arduino board
