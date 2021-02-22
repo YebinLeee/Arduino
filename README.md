@@ -2,7 +2,7 @@
 Studying how to control led, buzzer, illuminator sensor, lcd, button, etc... using Serial Communication, programmed by C++ in an Arduino sketch IDE.
 
 <br>
-Reference: [Arduion.cc](https://www.arduino.cc)
+Reference: [Arduino.cc](https://www.arduino.cc)
 <hr>
 
 ## Basic Structures - setup(), loop()
@@ -16,6 +16,12 @@ _**loop()**_
 
 > loops consecutively
 
+```cpp
+void setup() {
+}
+void loop() {
+}
+```
 <br>
 
 ## Functions References
