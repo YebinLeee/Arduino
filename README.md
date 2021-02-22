@@ -110,7 +110,7 @@ _**Serial.write()**_
 
 <br>
 
-## lcd functions
+### LCD functions references
 
 **_lcd.begin(rows, cols)_**
 
