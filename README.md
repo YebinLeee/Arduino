@@ -1,5 +1,5 @@
 # Arduino
-Studying how to control led, buzzer, illuminator sensor, lcd, button, etc... using Serial Communication, programmed by C++ in an Arduino sketch IDE.
+Studying how to control led, buzzer, illuminator sensor, lcd, button, or other simple applicable IoT devices using Serial Communication, programmed by C++ in an Arduino sketch IDE.
 
 <br>
 Reference: [Arduino.cc](https://www.arduino.cc)
