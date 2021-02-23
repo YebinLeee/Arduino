@@ -155,3 +155,78 @@ _for a 2x16 display:_
 [reference](https://www.arduino.cc/en/Tutorial/LibraryExamples/HelloWorld)
 <img src="https://user-images.githubusercontent.com/71310074/108723071-31a65e00-7567-11eb-9125-c4d5c9bad616.png" width="400"></img>
 <br><hr><br>
+
+
+
+## ESP8266 - NodeMCU (WiFi Module)
+
+Reference: [1](http://www.martyncurrey.com/esp8266-and-the-arduino-ide/), [2](https://iotbytes.wordpress.com/nodemcu-pinout/), [3](http://www.dreamy.pe.kr/zbxe/CodeClip/3768899), [4](https://www.electronicwings.com/nodemcu/nodemcu-gpio-with-arduino-ide), [5](https://louie0724.tistory.com/219)
+<br>
+
+- built in TCP/IP protocol stack -> multiple TC Client connections
+- D0-D8, SD1-SD3: GPIO, PWM, IIC
+
+<br>
+
+### Pin Map 
+<img src="https://pradeepsinghblog.files.wordpress.com/2016/04/nodemcu_pins.png?w=533&zoom=2" width=300></img>
+
+
+
+
+### WiFi Functions References
+
+_**WiFi.begin(ssid, pw)**_
+> Initializes the WiFi library's network settings and provides the current status.
+> (name of the WiFi network, a security code pw)
+
+```c++
+char *ssid="iptime"; // char ssid[] = "iptime";
+char *pw="password"; // char pw[]="password";
+
+void setup(){
+    WiFi.begin(ssid, pw);
+}
+void loop() {}
+```
+
+_**WiFiServer()**_
+> creates a server 
+
+_**WiFi.localIP();**_
+> Gets the WiFi shield's IP address
+
+_**WiFi.status()**_
+> Return the connection status
+> return value:
+> - WL_CONNECTED: connected to a WiFi network
+> - WL_DISCONNECTED
+> - WL_NO_SHIED: no WiFi shiled is present
+> - WL_SCAN_COMPLETED: scan networks is completed
+
+```c++
+while ( WiFi.status() != WL_CONNECTED){
+    Serial.print("Attempting to connect to WEP network, SSID: ");
+    Serial.println(ssid);
+}
+```
+
+_**WiFiClient()**_
+> Creates a client that can connect to a specified Internet IP address and port as a defined in a client.connect()
+
+_**client.connect(ip, port);  client.connect*URL, port);**_
+> connect to the IP address and port specified in the constructor. 
+> return value: success/failure
+
+```c++
+char *servername="google.com";
+WiFiClient client;
+
+void setup(){
+    ...
+    if(client.connect(servername, 80)){
+        Serial.println("connected");
+        ...
+    }
+```
+
