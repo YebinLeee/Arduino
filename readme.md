@@ -171,10 +171,12 @@ Reference: [1](http://www.martyncurrey.com/esp8266-and-the-arduino-ide/), [2](ht
 ### Pin Map 
 <img src="https://pradeepsinghblog.files.wordpress.com/2016/04/nodemcu_pins.png?w=533&zoom=2" width=300></img>
 
-
+<br>
 
 
 ### WiFi Functions References
+
+Reference: [Arduino.cc](https://www.arduino.cc/en/Reference/WiFi)
 
 _**WiFi.begin(ssid, pw)**_
 > Initializes the WiFi library's network settings and provides the current status.
