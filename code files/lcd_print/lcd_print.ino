@@ -10,6 +10,4 @@ void setup()
   lcd.print("Hello, I'm Yebin hehe"); // lcd 화면에 문자열 출력(16번째 문자열에서 끝남)
 }
 
-void loop() {
- 
-}
+void loop() {}
