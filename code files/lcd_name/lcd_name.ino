@@ -1,7 +1,7 @@
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 
-LiquidCrystal_I2C lcd(0x27,16,2); // lcd 변수 선언(주소, 열, 행)
+LiquidCrystal_I2C lcd(0x27,16,2); // I2C로 통신하는 lcd 객체 선언(주소, 열, 행 - 16열 2행의 LCD화면)
 
 void setup()
 {
