@@ -4,6 +4,7 @@ Studying how to control led, buzzer, illuminator sensor, lcd, button, or other s
 Used Boards:
 - MEGA 2560 with 115200 baud rate
 - ESP8266 NodeMCU
+- Uno R3
 
 <br>
 
