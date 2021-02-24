@@ -6,7 +6,7 @@ LiquidCrystal_I2C lcd(0x27,16,2); // I2C로 통신하는 lcd 객체 선언(주�
 void setup()
 {
   lcd.init(); // initialize the lcd
-  lcd.backlight(); // print a message to the lcd
+  lcd.backlight(); // print a message to the lcd(until the 16th)
   lcd.print("Hello, I'm Yebin hehe");
 }
 
